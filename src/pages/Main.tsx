@@ -4,7 +4,6 @@ const [from, setFrom] = createSignal('');
 const [state, setState] = createSignal<'idle' | 'error' | 'success'>('idle');
 export const Main = () => {
 
-
     return <>{state() === 'error' ? <div style={{
         display: 'grid',
         "background-color": 'red',
