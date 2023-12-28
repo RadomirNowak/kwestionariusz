@@ -30,9 +30,12 @@ export const Main = () => {
     onSubmit={(e) => {
         e.preventDefault();
         console.log('submit', from());
+        // @ts-ignore
         if(e.target[2].value === 'debica') {
             setState('error');
-        } else if (e.target[2].value === 'jodlowa') {
+        } 
+        // @ts-ignore
+        else if (e.target[2].value === 'jodlowa') {
             setState('success');
         }
     }}
